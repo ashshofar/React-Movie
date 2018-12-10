@@ -1,0 +1,4 @@
+export const LOADING_TRUE = "favorites/LOADING_TRUE";
+export const GET_FAVORITES = "GET_FAVORITES";
+export const STORE_FAVORITE = "STORE_FAVORITE";
+export const DELETE_FAVORITE = "DELET_FAVORITE";
