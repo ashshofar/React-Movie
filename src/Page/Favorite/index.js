@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Table } from 'reactstrap';
+import { Container, Row, Table, Button } from 'reactstrap';
 
 import * as actions from "./actions";
 import { connect } from "react-redux";
@@ -30,7 +30,9 @@ class Favorite extends Component {
                             <tr key={item.id}>
                                 <td>{item.movie.title}</td>
                                 <td>{item.created_at}</td>
-                                <td>Hapus</td>
+                                <td>
+                                    <Button onClick={() => this.props.deleteFavorite(item.id)}>Hapus</Button>
+                                </td>
                             </tr>
                         ))
                     }

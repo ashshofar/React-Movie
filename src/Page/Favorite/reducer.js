@@ -1,5 +1,6 @@
 import {
-    GET_FAVORITES,
+	GET_FAVORITES,
+	DELETE_FAVORITE,
     LOADING_TRUE
 } from "./type";
 

@@ -24,3 +24,15 @@ export function getFavorites() {
         })
     }
 }
+
+export function deleteFavorite(id) {
+    return async (dispatch) => {
+
+        await axios.get(
+			"http://unittest.test/api/favorite/detele/"+id
+        );
+
+
+        dispatch(getFavorites())
+    }
+}
